@@ -390,7 +390,7 @@ print(conf_train)
     
 #confustion matrix test
 print("\nTEST: CONFUSION MATRIX\n")
-conf_test = Y_test_onehot.T @ Y_hat_test_pred    ##As long as you keep track of what axis represents predicted vs actual
+conf_test = Y_test_onehot.T @ Y_hat_test_pred    ##As long as you keep track of what axis represents predicted vs actual. Note that X @ Y is the same as np.dot(X,Y) when performing a dot-product
 print(conf_test)
 
 #compute the accuracy of the systems

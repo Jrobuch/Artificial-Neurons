@@ -390,7 +390,7 @@ print(conf_train)
     
 #confustion matrix test
 print("\nTEST: CONFUSION MATRIX\n")
-conf_test = Y_test_onehot.T @ Y_hat_test_pred    ##As long as you keep track of what axis
+conf_test = Y_test_onehot.T @ Y_hat_test_pred    ##As long as you keep track of what axis represents predicted vs actual
 print(conf_test)
 
 #compute the accuracy of the systems
